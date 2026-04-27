@@ -1,0 +1,61 @@
+body {
+    background-color: #000;
+}
+
+.relative.z-10 {
+    position: relative;
+    z-index: 10;
+}
+
+.card-glassmorphism {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@keyframes border-glow {
+    0% { border-color: rgba(225, 29, 72, 0.2); }
+    50% { border-color: rgba(225, 29, 72, 0.5); }
+    100% { border-color: rgba(225, 29, 72, 0.2); }
+}
+
+.animate-border-glow {
+    border-color: rgba(225, 29, 72, 0.2);
+    animation: border-glow 4s infinite ease-in-out;
+}
+
+.animate-border-glow:hover {
+    border-color: rgba(225, 29, 72, 0.8);
+    box-shadow: 0 0 20px rgba(225, 29, 72, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e11d48;
+}
+
+textarea:focus, select:focus {
+    box-shadow: 0 0 0 2px rgba(225, 29, 72, 0.5);
+}
+
+button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
